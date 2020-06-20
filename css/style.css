@@ -1,0 +1,299 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans TC',  sans-serif;
+    height:  100%;
+    background-color: #eee;
+}
+
+header {
+    background: linear-gradient(135deg, #1cb3ff 0%, #6909de 75%);
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    z-index: 999;
+}
+
+header a, header span {
+    color: white;
+    text-decoration:none;
+    text-align: center;
+    line-height: 35px;
+    font-size: 20px;
+    padding: 15px;
+}
+
+a.logo {
+    font-size: 35px;
+    padding-left: 5%;
+}
+
+.header-data {
+    float: right;
+    padding-right: 5%;
+}
+
+.container {
+    margin: auto;
+    margin: 0 auto;
+    min-height: 40px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    max-width: 1250px;
+}
+
+.inner {
+    padding-top: 60px;
+    padding-bottom: 48px;
+}
+
+.login-card {
+    width: 500px;
+    background: rgba(250, 250, 250, 0.92);
+    padding: 50px 40px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 3px rgba(106, 131, 134, 0.1);
+}
+
+.card {
+    width: 800px;
+    background: rgba(250, 250, 250, 0.92);
+    padding: 50px 40px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 3px rgba(106, 131, 134, 0.1);
+}
+
+.wrapper .title {
+    font-size: 28px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.wrapper .post {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: initial;
+    background-color: #eee;
+}
+
+.form-input {
+    position: relative;
+    margin-top: 16px;
+}
+
+.form-input label {
+    position: absolute;
+    top: 13px;
+    left: 4px;
+    padding-left: 4px;
+}
+
+.form-input label i {
+    font-size: 27px;
+    color: #989898;
+}
+
+.form-input label + input {
+    padding-left: 50px;
+}
+
+.form-input input {
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    padding: 0 12px;
+    padding-right: 12px;
+    padding-left: 12px;
+    padding-right: 36px;
+    width: 100%;
+    height: 50px;
+    background-color:#fff;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+textarea::placeholder {
+    color: #c1c1c1;
+    opacity: 1;
+}
+
+.form-input textarea {
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    padding: 2 12px;
+    padding-right: 12px;
+    padding-left: 12px;
+    padding-right: 36px;
+    background-color:#fff;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: #c1c1c1;
+}
+
+input::placeholder {
+    color: #c1c1c1;
+    opacity: 1;
+}
+
+.form-buttonbar {
+    margin-top: 16px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.form-buttonbar::after {
+    clear: both;
+}
+
+.form-buttonbar::before, .form__buttonbar::after {
+    content: "";
+    display: block;
+}
+
+
+.wrapper .button {
+    display: inline-block;
+    border: 0;
+    border-radius: 5px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-color: cadetblue;
+}
+
+.menu-top {
+    padding-top: 40px;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.menu {
+    display: block !important;  
+    text-align: center;
+}
+
+ul > li {
+    display: inline;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+li > a {
+    text-decoration:none;
+}
+
+.menu ul li:first-child {
+    border-left: 1px solid #dedede; 
+}
+
+.menu ul li {
+    border-right: 1px solid #dedede;    
+}
+
+.admin-container {
+    width: 100%;
+    height: calc(100% - 38px);
+}
+
+.admin-container > .admin-menu {
+    width: 10%;
+    min-width: 200px;
+    background-color: cadetblue;
+    height:  100%;
+    float: left;
+    padding-top: 40px;
+    position: fixed;
+}
+
+.admin-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.admin-menu ul > li a {
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.admin-menu ul > li:hover {
+    background-color: cadetblue;
+}
+
+.admin-menu ul > li:hover a, .admin-menu ul > li.active a{
+    color: #ffffff;
+}
+
+.admin-menu ul > li:hover, .admin-menu ul > li.active {
+    background-color: cadetblue;
+}
+
+.admin-menu ul > li:hover a {
+    color: #ffffff;
+}
+
+.admin-container > .admin-content {
+    overflow: hidden;
+    padding-left: 20%;
+    padding-top: 60px;
+}
+
+.admin-button {
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-color: gray;
+    color: white;
+}
+
+.table {
+    font-size:16px; 
+    border:1px solid #000;
+    margin-left:auto; 
+    margin-right:auto;
+    border-collapse:collapse;
+}
+
+.table-key {
+    border:1px solid #000;
+    padding:5px;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.table-value {
+    border:1px solid #000;
+    padding:5px;
+    background-color: burlywood;
+    text-align: center;
+}
